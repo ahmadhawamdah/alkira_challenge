@@ -81,7 +81,7 @@ export default function Home({ nbaTeams, nbaGames }) {
         <SharedContext.Provider
           value={{ games, setGames, searchInp, setSearchInp, singleID, setID, setClicked, panel, setPanel, nbaGames }}>
           <Header />
-          {singleID && clicked && <Card />}
+          {singleID != 0 && clicked && <Card />}
           <div
             style={{ color: "white", backgroundColor: "#074684" }}
             className="grid grid-cols-5 w-200 pl-6 p-3.5 gap-4 content-between pt-4 color-white text-xl font-semibold">

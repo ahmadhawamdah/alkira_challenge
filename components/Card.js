@@ -32,7 +32,7 @@ export default function Card() {
                         <CloseIcon />
                     </IconButton>
                 </div>
-                <div className="grid grid-cols-2 gap-4 pl-3 mt-2">
+                <div className="grid grid-cols-2 gap-4 pl-4 mt-2">
                     <div>
                         <p>Team Full Name</p>
                         <p>Total Games in 2021</p>
