@@ -11,7 +11,7 @@ export default function Home({ nbaTeams, nbaGames }) {
 
   const [teams, setTeams] = React.useState(nbaTeams.data ? nbaTeams.data : "");
   const [games, setGames] = React.useState(nbaGames.data ? nbaGames.data : "");
-  const [sortArrow, setSortArrow] = React.useState("^");
+  const [sortArrow, setSortArrow] = React.useState("↑");
   const [singleID, setID] = React.useState(0);
   const [clicked, setClicked] = React.useState(false);
   const [sort, setSort] = React.useState(false);
@@ -36,14 +36,14 @@ export default function Home({ nbaTeams, nbaGames }) {
         return a.city > b.city ? 1 : -1
       })
       setTeams(sorted);
-      setSortArrow("^");
+      setSortArrow("↑");
     }
     if (!sort) {
       const sorted = [...nbaTeams.data].sort((a, b) => {
         return a.city < b.city ? 1 : -1
       })
       setTeams(sorted);
-      setSortArrow("v");
+      setSortArrow("↓");
     }
   }
 
