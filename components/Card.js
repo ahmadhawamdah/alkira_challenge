@@ -1,19 +1,15 @@
 import * as React from 'react';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
 import SharedContext from '../pages/SharedContext';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 
 export default function Card() {
     const {singleID, games, setGames, panel, setPanel, setClicked} = React.useContext(SharedContext);
-    console.log(games[0].home_team.id);
-    console.log(games);
-    
+
     let curGame = [];
     curGame = games.filter((game) => game.home_team.id === singleID);
-    console.log(curGame);
+
     return (
         <div>
             <Drawer
