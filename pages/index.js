@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react';
 import { useState } from "react";
-import SharedContext from './SharedContext';
+import SharedContext from '../components/SharedContext';
 import 'bootstrap/dist/css/bootstrap.css';
 import Header from "../components/Header";
 import ListCards from "../components/ListCards";
@@ -11,7 +11,7 @@ export default function Home({ nbaTeams, nbaGames }) {
 
   const [teams, setTeams] = React.useState(nbaTeams.data ? nbaTeams.data : "");
   const [games, setGames] = React.useState(nbaGames.data ? nbaGames.data : "");
-  const [sortArrow, setSortArrow] = React.useState("↑");
+  const [sortArrow, setSortArrow] = React.useState("^");
   const [singleID, setID] = React.useState(0);
   const [clicked, setClicked] = React.useState(false);
   const [sort, setSort] = React.useState(false);
@@ -36,14 +36,14 @@ export default function Home({ nbaTeams, nbaGames }) {
         return a.city > b.city ? 1 : -1
       })
       setTeams(sorted);
-      setSortArrow("↑");
+      setSortArrow("^");
     }
     if (!sort) {
       const sorted = [...nbaTeams.data].sort((a, b) => {
         return a.city < b.city ? 1 : -1
       })
       setTeams(sorted);
-      setSortArrow("↓");
+      setSortArrow("v");
     }
   }
 

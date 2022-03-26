@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 
 import React from 'react';
-import SharedContext from '../pages/SharedContext';
+import SharedContext from './SharedContext';
 import { SearchIcon } from "@heroicons/react/solid";
 
 export default function Header() {

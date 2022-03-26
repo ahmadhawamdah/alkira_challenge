@@ -1,5 +1,5 @@
 import React from "react";
-import SharedContext from '../pages/SharedContext';
+import SharedContext from './SharedContext';
 
 export default function ListCards({ id, abbreviation, city, conference, description, division, full_name, name }) {
     const { setID, setClicked, setPanel } = React.useContext(SharedContext);
