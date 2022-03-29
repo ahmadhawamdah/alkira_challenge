@@ -84,7 +84,7 @@ export default function Home({ nbaTeams, nbaGames }) {
           {singleID != 0 && clicked && <Card />}
           <div
             style={{ color: "white", backgroundColor: "#074684" }}
-            className="grid grid-cols-5 w-200 pl-6 p-3.5 gap-4 content-between pt-4 color-white text-xl font-semibold">
+            className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 w-200 pl-6 p-3.5 gap-4 content-between pt-4 color-white text-xl font-semibold">
             <p> Name </p>
             <p
               className="cursor-pointer"
