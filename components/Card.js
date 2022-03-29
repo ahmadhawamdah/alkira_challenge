@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 
 export default function Card() {
-    const {singleID, games, setGames, panel, setPanel, setClicked} = React.useContext(SharedContext);
+    const {singleID, games, panel, setPanel, setClicked} = React.useContext(SharedContext);
 
     let curGame = [];
     curGame = games.filter((game) => game.home_team.id === singleID);

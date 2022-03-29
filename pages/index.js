@@ -124,7 +124,7 @@ export default function Home({ nbaTeams, nbaGames }) {
               },
               )
               .map(({ id, abbreviation, city, conference, description, division, full_name, name }) => (
-                <div key={id} style={{ marginBottom: "5px" }}>
+                <div className = "teams" key={id} style={{ marginBottom: "5px" }}>
                   <ListCards
                     id={id}
                     abbreviation={abbreviation}

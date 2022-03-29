@@ -15,8 +15,7 @@ export default function Header() {
                 className=
                 "flex items-center mb-5 mt-4 rounded-md border-blue-600 border-2 py-2 shadow-sm "
             >
-                <SearchIcon className="md:inline-flex h-8 
-            p-2 cursor-pointer md:mx-2" />
+                <SearchIcon className="md:inline-flex h-8 p-2 cursor-pointer md:mx-2" />
                 <input
                     className="flex-grow pl-5 bg-transparent outline-none text-gray-600 text-sm placeholder-gray-400"
                     value={searchInp}
